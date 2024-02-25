@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Definición del Document Type Definition (DTD) -->
+<!DOCTYPE listaventas [
+    <!-- Definición de la estructura del documento XML -->
+    <!ELEMENT listaventas (venta+)>
+    <!ELEMENT venta (importe, comprador, vendedor, fecha?, codigofactura)>
+    <!ELEMENT importe (#PCDATA)>
+    <!ELEMENT comprador (#PCDATA)>
+    <!ELEMENT vendedor (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT codigofactura (#PCDATA)>
+]>
+<!-- Elemento raíz del documento XML -->
+<listaventas>
+    <!-- Detalles de la primera venta -->
+    <venta>
+        <importe>1800</importe>
+        <comprador>Carlos Martínez</comprador>
+        <vendedor>APPLE</vendedor>
+        <fecha></fecha>
+        <codigofactura>E17</codigofactura>
+    </venta>
+    <!-- Detalles de la segunda venta -->
+    <venta>
+        <importe>3200</importe>
+        <comprador>Carlos Martínez</comprador>
+        <vendedor>APPLE</vendedor>
+        <fecha>19-11-2022</fecha>
+        <codigofactura>E18</codigofactura>
+    </venta>
+    <!-- Detalles de la tercera venta -->
+    <venta>
+        <importe>995.50</importe>
+        <comprador>María García</comprador>
+        <vendedor>HP</vendedor>
+        <fecha></fecha>
+        <codigofactura>E19</codigofactura>
+    </venta>
+</listaventas>
